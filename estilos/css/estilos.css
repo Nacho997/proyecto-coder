@@ -86,6 +86,9 @@ body {
   text-align: center; }
 
 /* SECCIÓN PRODUCTOS  */
+body {
+  background-color: darkslategrey;
+}
 .contenedor {
   width: 90%;
   margin: auto;
@@ -125,7 +128,9 @@ body {
 /* CONTACTO */
 .container-cont {
   display: grid;
-  grid-template-areas: "mapa formu formu" "mapa formu formu" "redes formu formu";
+  grid-template-areas: "mapa formu formu"
+ "mapa formu formu"
+ "redes formu formu";
   border: 1px solid green;
   height: 900px; }
 

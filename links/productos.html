@@ -56,13 +56,17 @@
 	
 	<section class="contenedor">
 		<form class="filtrarprod">
-			<select>
-				<option value="defecto">Ordenar por</option>
-				<option value="mas_vendidos">Mas vendidos</option>
-				<option value="desc">Precio mayor a menor</option>
-				<option value="asc">Precio menor a mayor</option>
-			</select>
-			<ul>
+			<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				  <label class="input-group-text" for="inputGroupSelect01">Ordenar</label>
+				</div>
+				<select class="custom-select" id="inputGroupSelect01">
+				  <option selected>Más relevantes</option>
+				  <option value="1">Precio menor a mayor</option>
+				  <option value="2">Precio mayor a menor</option>
+				</select>
+			</div>
+			<ul class="list-unstyled">
 				<li>
 					<input type="checkbox" name="alimento">
 					<label for="alimento">Alimento</label>
@@ -88,12 +92,68 @@
 					<label for="shampoo">Shampoo</label>
 				</li>
 				<li>
-					<input type="submit" name="filtrar">
+					<button type="submit" class="btn btn-info">Aplicar</button>
 				</li>
 			</ul>
 		</form>
 		<div class="productos">
-			<div class="prod">
+			<div class="card text-dark" style="width: 18rem;">
+				<img src="../images/imagen9.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			  </div>
+			  <div class="card" style="width: 18rem;">
+				<img src="../images/imagen8.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			  </div>
+			  <div class="card" style="width: 18rem;">
+				<img src="../images/imagen4.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			  </div>
+			  <div class="card" style="width: 18rem;">
+				<img src="../images/logo.png" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			  </div>
+			  <div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			  </div>
+			  <div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			  </div>
+			  <div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				  <a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			  </div>
+			<!-- <div class="prod">
 				<img class="fotoProd" src="./images/gatito.png" alt="">
 				<p >$ 10.000</p>
 				<h5>Nombre producto</h5>
@@ -148,7 +208,7 @@
 				<img class="fotoProd" src="./images/gatito.png" alt="">
 				<p >$ 10.000</p>
 				<h5>Nombre producto</h5>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<footer class="footer-style container-fluid no-gutters">
