@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Peluquería canina - contacto. Teléfono: 221-6092859 (turnos). E-mail: hmpeluquería@gmail.com">
+	<meta name="keywords" content="contacto, teléfono, turno, mail, peluquería canina, mascotas">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../estilos/css/estilos.css">
+</head>
+<body>
+<!-- MENU DE NAVEGACION -->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html"><img src="../images/home.svg" alt="home"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        	<ul class="navbar-nav">
+            	<li class="nav-item dropdown">
+              		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                		Servicios
+              		</a>
+              		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                		<a class="dropdown-item" href="./peluqueria.html">Promociones</a>
+                		<a class="dropdown-item" href="#">Turnos</a>
+              		</div>
+            	</li>
+            	<li class="nav-item">
+              		<a class="nav-link" href="./productos.html">Productos</a>
+            	</li>
+            	<li class="nav-item dropdown">
+              		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                		Quienes somos
+              		</a>
+              		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                		<a class="dropdown-item" href="./quienessomos.html">Nosotros</a>
+                		<a class="dropdown-item" href="#">Nuestros clientes</a>
+              		</div>
+            	</li>
+            	<li class="nav-item active">
+              		<a class="nav-link" href="./contacto.html">Contacto</a>
+            	</li>
+          	</ul>
+        </div>
+    </nav>
+</header>
+
+	<h1 class="principal">Contactanos</h1>
+	<div class="container-cont">
+		<div class="mapa"></div>
+		<div class="redes"></div>
+		<!-- FORMULARIO DE CONTACTO -->
+		<form class="form-cont" method="post">
+			<label for="nombre">Nombre: </label>
+			<input class="input-cont" type="text" name="nombre" placeholder="Nombre">
+			<br>
+			<label for="apellido">Apellido: </label>
+			<input class="input-cont" type="text" name="apellido" placeholder="apellido">
+			<br>
+			<label for="email">E-mail: </label>
+			<input class="input-cont" type="email" name="email" placeholder="E-mail">
+			<br>
+			<label for="estado">Estado civil</label>
+			<select name="estado">
+				<option value="casado">Casado/a</option>
+				<option value="soltero">Soltero/a</option>
+				<option value="viudo">Viudo/a</option>
+				<option value="concuvino">Concuvinato</option>
+			</select>
+			<br>
+			<label for="telefono">Teléfono: </label>
+			<input class="input-cont" type="text" name="telefono" placeholder="Teléfono">
+			<br>
+			<label for="mensaje">Mensaje: </label>
+			<textarea class="input-cont" name="mensaje" placeholder="Mensaje"></textarea>
+			<br>
+			<label for="news">Desea recibir nuestro newsletter </label>
+			<input class="input-cont" type="radio" name="news" value="si">
+			<br>
+			<input class="input-cont" type="reset" name="reset">
+			<input class="input-cont" type="submit" name="submit">
+		</form>
+	</div>
+	<footer class="footer-style container-fluid no-gutters">
+		<div class="row no-gutters justify-content-center">
+			<p>Gracias por su visita</p>
+		</div>
+		<div class="row no-gutters align-items-center justify-content-around">
+			<div class="col-md-4 col-lg-4 col-xl-4">
+				<h4 class="text-center">Dirección</h4>
+				<p class="text-center">Calle 35 N° 789</p>
+		  	</div>
+		  	<div class="col-md-4 col-lg-4 col-xl-4">
+				<h4 class="text-center">Nuestras redes</h4>
+				<ul class="redes-foot list-inline text-center">
+					<li>
+						<img src="./images/globe.svg" alt="">
+						<a class="text-decoration-none" href="#">/Hakuna-Matata</a>
+					</li>
+					<li>
+						<img src="./images/globe.svg" alt="">
+						<a class="text-decoration-none" href="#">@Hakuna.matata</a>
+					</li>
+					<li>
+						<img src="./images/globe.svg" alt="">
+						<a class="text-decoration-none" href="#">www.pethm.com</a>
+					</li>
+				</ul>
+		  	</div>
+		</div>
+	</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</html>
