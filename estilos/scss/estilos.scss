@@ -50,6 +50,7 @@ body {
     grid-template-rows: 3fr 1fr;
 }
 @media screen and (max-width:768px) {
+    // PRODUCTOS 
     .contenedor{
         width: 100%;
         grid-template-columns: 1fr;
@@ -65,11 +66,21 @@ body {
             grid-template-rows: repeat(4, 2fr);
         }
     }
+
+    // CONTACTO 
+    .form-cont {
+        width: 100%;
+    }
+    .maps {
+        display: none;
+    }
+
+    // QUIENES SOMOS   
+    
 }
-.card-img-top {
-     width: 90%;
-     margin: auto;
-}
+
+
+
 .productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -84,6 +95,10 @@ body {
         width: 98%;
         margin: auto;
     }
+    .card-img-top {
+        width: 90%;
+        margin: auto;
+   }
 }
 
 
@@ -98,40 +113,36 @@ body {
 /* CONTACTO */
 .container-cont {
     display: grid;
-    grid-template-areas: 
-        "mapa formu formu"
-        "mapa formu formu"
-        "redes formu formu";
-    border: 1px solid green;
-    height: 900px;
+    grid-template-columns: 3fr 1fr;
+    background-image: url(../../images/perrito2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 50px 20px 0px;
+    .form-cont {
+        width: 70%;
+        margin: auto;
+    }
+
 }
-.mapa {
-    height: 100px;                        /*FORMULARIO DE CONTACTO SIN TERMINAR*/
-    width: 100px;
-    background-color: grey;
-    grid-area: mapa;
+
+.maps {
+    width: 400px;
+    height: 300px;
 }
-.form-cont {
-    grid-area: formu;
-    background-color: crimson;
-    text-align: center;
-}
-.redes {
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-    grid-area: redes;
-}
+
+
+
 // QUIENES SOMOS
 .bloque {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 90%;
     margin: auto;
     align-items: center;
     &__titulo {
         padding: $padding;
-        border-bottom:  1px dashed whitesmoke;
+        border-right:  1px dashed whitesmoke;
     }
     &__presentacion {
         padding: $padding;

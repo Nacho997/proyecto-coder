@@ -118,11 +118,11 @@ body {
       margin: auto; }
     .contenedor .productos {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 2fr); } }
-
-.card-img-top {
-  width: 90%;
-  margin: auto; }
+      grid-template-rows: repeat(4, 2fr); }
+  .form-cont {
+    width: 100%; }
+  .maps {
+    display: none; } }
 
 .productos {
   display: grid;
@@ -136,6 +136,9 @@ body {
     border-bottom: 1px solid #ccc;
     width: 98%;
     margin: auto; }
+  .productos .card-img-top {
+    width: 90%;
+    margin: auto; }
 
 .card-body {
   display: flex;
@@ -146,37 +149,29 @@ body {
 /* CONTACTO */
 .container-cont {
   display: grid;
-  grid-template-areas: "mapa formu formu" "mapa formu formu" "redes formu formu";
-  border: 1px solid green;
-  height: 900px; }
+  grid-template-columns: 3fr 1fr;
+  background-image: url(../../images/perrito2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 50px 20px 0px; }
+  .container-cont .form-cont {
+    width: 70%;
+    margin: auto; }
 
-.mapa {
-  height: 100px;
-  /*FORMULARIO DE CONTACTO SIN TERMINAR*/
-  width: 100px;
-  background-color: grey;
-  grid-area: mapa; }
-
-.form-cont {
-  grid-area: formu;
-  background-color: crimson;
-  text-align: center; }
-
-.redes {
-  height: 100px;
-  width: 100px;
-  background-color: blue;
-  grid-area: redes; }
+.maps {
+  width: 400px;
+  height: 300px; }
 
 .bloque {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 90%;
   margin: auto;
   align-items: center; }
   .bloque__titulo {
     padding: 15px 60px;
-    border-bottom: 1px dashed whitesmoke; }
+    border-right: 1px dashed whitesmoke; }
   .bloque__presentacion {
     padding: 15px 60px;
     text-align: center; }
